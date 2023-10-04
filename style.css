@@ -1,0 +1,87 @@
+.box-grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 110px 1fr;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    grid-column: 1/2;
+    border: 2px solid black;
+    border-radius: 2px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+header{
+    grid-column: 2/3;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    text-align: center;
+}
+
+nav{
+    background-color: black;
+    max-height: 100px;
+    margin: 5px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+nav a{
+    color: white;
+    height: 10px;
+    padding: 5px;
+
+
+}
+
+nav a:hover{
+    color: gray;
+}
+
+nav ul{
+    display: flex;
+    text-decoration: none;  
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+aside{
+    background-image: url(./img/dragon_side.png);
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 800px;
+    border: 2px solid black;
+    border-radius: 2px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+main{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: black;
+    margin-top: 120px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+main img{
+    width: 31%;
+    padding: 10px;
+}
+
+footer{
+    grid-column: 2/3;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 25px;
+}
